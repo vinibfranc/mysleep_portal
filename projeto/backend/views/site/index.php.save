@@ -5,6 +5,48 @@
 $this->title = 'Dashboards - MySleep';
 ?>
 
+<div class="col-md-6">
+    <!-- AREA CHART -->
+    <div class="box box-primary">
+       """"""""""""""""""" <div class="box-header with-border">
+            <h3 class="box-title">Pie Chart</h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="chart">
+
+        <?php
+         echo  \dosamigos\chartjs\ChartJs::widget([
+        'type' => 'pie',
+
+        'data' =>[   
+
+                    'labels' => ['Chrome', 'IE' ,'FireFox' , 'Safari', 'Opera','Navigator'],
+                     
+                    'datasets' => [
+                          [           
+                           'data'=>[700,500,400,600,300,100],
+                           'backgroundColor'=>['#f56954','#00a65a','#f39c12','#00c0ef','#3c8dbc','#d2d6de'],
+                          ],
+                    
+                    ]
+               ]    
+
+            ]);
+        ?>
+                
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+
 
 <div class="col-md-6">
     <!-- AREA CHART -->

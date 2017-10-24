@@ -16,7 +16,18 @@ dmstr\web\AdminLteAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
+  
+      <!-- Theme Styles LitGambs-->
+        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>      
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/global.css" rel="stylesheet" type="text/css"/>
+      <!--End LitGambs-->
+      
+
+
 </head>
+
 <body class="login-page">
 
 <?php $this->beginBody() ?>
