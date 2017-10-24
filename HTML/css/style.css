@@ -2381,3 +2381,11 @@ fieldset[disabled] .s-btn {
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #13b1cd;
 }
+
+/* Demo Video
+------------------------------ */
+
+video#bgvid {
+	width: 500px;
+	height: 500px;
+}
